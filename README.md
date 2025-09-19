@@ -1,5 +1,5 @@
 # class-dump-docker
-A dockerized version of the class-dump tool
+A dockerized version of the class-dump tool, good for any OS.
 
 ### **Step 1: Create the image**
 
@@ -30,3 +30,7 @@ docker run --rm -it -v "/path/of/the/binary/you/want/to/analyze":/b class-dump-d
 docker run --platform linux/amd64 --rm -it -v "/path/of/the/binary/you/want/to/analyze":/b class-dump-docker
 ```
 This should output all the interfaces and other relevant information.
+
+Credits:
+- made by: [Andrea Paiano](https://www.linkedin.com/in/andrea-paiano-27851520/) and [Luca Capacci](https://www.linkedin.com/in/lucacapacci/)
+- based on: [class-dump](https://github.com/nygard/class-dump) and [class-dump-linux](https://github.com/tedzhang2891/class-dump-linux)
