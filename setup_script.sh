@@ -8,7 +8,7 @@ apt-get install -y sudo
 
 apt-get install -y make cmake git
 
-git clone https://github.com/plaurent/gnustep-build
+git clone https://github.com/lucacapacci/gnustep-build
 cd gnustep-build/ubuntu-20.04-clang-10.0-runtime-2.0/
 ./GNUstep-buildon-ubuntu2004.sh
 
@@ -16,9 +16,8 @@ apt-get install -y libssl-dev
 apt-get install -y wget
 
 cd /
-git clone https://github.com/tedzhang2891/class-dump-linux.git
+git clone https://github.com/lucacapacci/class-dump-linux.git
 cd class-dump-linux/dependence/include/os/
-wget https://raw.githubusercontent.com/mlcldh/appleLibdispatch/refs/heads/master/libdispatch-1008.200.78/libdispatch-1008.200.78/os/linux_base.h
 
 mv /usr/include/x86_64-linux-gnu /usr/include/x86_64-linux-gnu_undefined
   
