@@ -48,7 +48,7 @@ docker run --rm -it --platform linux/amd64 class-dump-docker /classdump
 Step 1: create a container and get into its CLI by running the following command:
 - Intel architecture:
 ```
-docker run --rm -it -v "/path/of/your/working/directory":/b class-dump-docker bash
+docker run --rm -it -v "/path/of/your/working/directory":/workingdir class-dump-docker bash
 ```
 - Apple Silicon:
 ```
