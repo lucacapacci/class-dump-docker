@@ -48,11 +48,11 @@ docker run --rm -it --platform linux/amd64 class-dump-docker /classdump
 Step 1: create a container and get into its CLI by running the following command:
 - Intel architecture:
 ```
-docker run --rm -it -v "/path/of/your/working/directory":/b bash
+docker run --rm -it -v "/path/of/your/working/directory":/b class-dump-docker bash
 ```
 - Apple Silicon:
 ```
-docker run --platform linux/amd64 -v "/path/of/your/working/directory":/workingdir bash
+docker run --rm -it --platform linux/amd64 -v "/path/of/your/working/directory":/workingdir class-dump-docker bash
 ```
 Step 2: execute any operation with class-dump on files in your working directory. The tool executable is in path `/classdump` and your working directory is in path `/workingdir`. For instance, the following command lists all arches in a binary called `mybinary` in your working directory:
 ```
